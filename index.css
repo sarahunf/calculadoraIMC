@@ -1,0 +1,49 @@
+.data {
+    border: solid 1px black;
+    margin: 40px auto;
+    width: 400px;
+}
+
+.data h1 {
+    border: solid 1px blue;
+    background-color: blue;
+    color: white;
+    width: 420px;
+    position: relative;
+    left: -10px;
+    text-align: center;
+}
+
+.data h1::before {
+    content: '';
+    position: absolute;
+    left: -1px;
+    top: -10px;
+    border-color: transparent rgb(0, 0, 166) rgb(0, 0, 166) transparent;
+}
+
+.data input {
+    float: right;
+  }
+
+.data p {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+div.actions {
+    display: inline-block;
+    margin: 0px 10px 0px 10px;
+    padding: 10px;
+}
+
+.data form {
+    padding: 10px;
+}
+
+.actions button {
+    padding: 10px;
+    margin: 10px auto;
+    background-color: rgb(156, 156, 255);
+}
